@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            theme:{
+                extend:{
+                    colors:{
+                        // gray:'#333333'
+                        cafe:'#581845'
+                    }
+                }
+
+            }
+
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base{
+            h1{
+                @apply text-3xl font-semibold;
+
+            }
+
+        }
+        @layer components{
+            .card{
+                    @apply bg-white rounded-lg border-2 shadow-md
+            }
+            .img-card{
+                @apply w-full aspect-square
+            }
+
+            .title-card{
+                @apply text-xl font-semibold
+            }
+            .text-card{
+
+                @apply text-gray-800
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+<!-- tienes un reset y el tipo de fuente, tailwind no te va  a dar mas al inicio -->
+
+<header class="border-solid border-green-600 border-2 flex justify-center items-center p-6 m-6 rounded-xl">
+    <h1 class="text-3xl font-semibold text-blue-700">Hola Mundo!</h1>
+    <h2 class="sm:bg-blue-500 md:bg-red-600 lg:bg-green-500">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit voluptates amet nobis. Quidem eos,
+         eius ex eveniet explicabo nostrum pariatur quia illo hic sapiente
+          tempora minus, at laboriosam? Tempore, neque.
+    </h2>
+</header>
+<section>
+<button class="bg-blue-500 text-white font-bold px-4 py-2 rounded-lg hover:bg-blue-700">
+    click
+</button>
+
+</section>
+<div class="container mx-auto border-2 border-solid max-w-7xl">
+<div class="grid gap-5 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 ">
+    <div class="bg-white rounded-lg border-2 shadow-md -m4">
+        
+        <img src="https://picsum.photos/seed/picsum/400/200" alt="imagen card" class="w-full aspect-square">
+        <div class="p-4">
+            <h2 class="text-xl font-semibold">Producto</h2>
+            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+                molestias porro temporibus ipsum. Vitae molestias quod non aut maiores? 
+                </p>
+        </div>
+    </div>
+    <!-- <div class="bg-white rounded-lg border-2 shadow-md -m4"> -->
+        <div class="card">
+        
+        <img src="https://picsum.photos/seed/picsum/400/200" alt="imagen card" 
+        class="img-card">
+        <div class="p-4">
+            <h2 class="title-card">Producto</h2>
+            <p class="text-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+                molestias porro temporibus ipsum. Vitae molestias quod non aut maiores? 
+                </p>
+        </div>
+    </div>
+    <div class="bg-white rounded-lg border-2 shadow-md -m4">
+        
+        <img src="https://picsum.photos/seed/picsum/400/200" alt="imagen card" class="w-full aspect-square">
+        <div class="p-4">
+            <h2 class="text-xl font-semibold">Producto</h2>
+            <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+                molestias porro temporibus ipsum. Vitae molestias quod non aut maiores? 
+                </p>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+</div>
+
+    
+    
+</body>
+</html>

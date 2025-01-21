@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+  
+ 
+}
+
+.navegation{
+  
+    align-items: center;
+    display: flex;
+
+    justify-content:space-between;
+}
+
+.main-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.link a {
+    text-decoration: none; 
+    color: inherit; /* Mantén el color del texto principal */
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+
+}
+
+.cabecera{
+display: flex;
+flex-direction: row;
+align-items:center;
+gap: 30px;
+}
+
+.titulo-big {
+    position: absolute;
+    top: 32%;
+    left: 22%;
+    transform: translate(-50%, -50%); /* Centra el texto */
+    font-family: 'Fraunces', serif;
+}
+.buttons-header{
+position: absolute;
+display: flex;
+top: 47%;
+left: 11%;
+gap: 10px;
+
+}
+
+.btn-light{
+    display: inline-flex; 
+    align-items: center; 
+    padding: 8px 12px;
+    color:black;
+    border: 1px solid black;
+}
+
+.btn{
+
+    padding: 10px 60px;
+}
+
+.btn-blue{
+    display: inline-flex; 
+    align-items: center; 
+    border: 1px solid blue;
+    color:white;
+    background-color: blue;    
+    
+}

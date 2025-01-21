@@ -1,0 +1,95 @@
+/*
+SELECTOR DE ETIQUETA
+*/
+main{
+background-color: rgb(237, 100, 184);
+font-family: Arial;
+
+}
+p{
+
+    font-weight: bold;
+    text-decoration: double;
+    
+}
+
+.parrafo{
+    color: white;
+}
+.noticias{
+    font-style: italic;
+}
+.primicia{
+
+    color: yellow;
+    background-color: aquamarine;
+
+}
+.secundario{
+font-size: 12px;
+
+}
+
+/* selectores de ID */
+/* #NOMBRE_ID */
+#btnsuscribirse{
+    border: 2px solid yellow;
+    background-color: gray;
+    font-weight: bold;
+}
+#p-accion{
+    color: red;
+
+}
+.llamada-accion{
+    color: orange;
+}
+ul li{
+    color: red;
+
+}
+
+
+/*  aplica a los LI que sean hijos inmediatos  de ul */
+ul>li{
+    font-style: italic;
+
+}
+
+/* APLICA LOS SPAN QUE TENGA P COMO HERMANOS DEBAJO DE ELLOS APLICA, A LOS QUE ESTAN CON
+OTRO DIV NO LO CONSIDERA */
+span ~ p{
+    color: green;
+}
+
+/* pseudoclase  --odd significa que dara color a los valores impares*/
+tr:nth-of-type(odd){
+background-color: brown;
+
+}
+
+tr:nth-of-type(even){
+    background-color: orange;
+}
+
+/* para darle color al momento de pasar el cursor del mouse */
+tr:hover{
+    background-color: red;
+    color: beige;
+    cursor: pointer;
+}
+/*selector pseudoelemento */
+.precios::before{
+    content: "\2192";
+    transform: translateX(100px);
+}
+
+.precios::after{
+    content: "\2190";
+}
+.precios::first-line{
+    content: "---------------------";
+    color: green;
+}
+
+

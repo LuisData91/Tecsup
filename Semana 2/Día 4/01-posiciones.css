@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+
+}
+
+header{
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 5px;
+}
+
+main{
+border: 2px solid blue;
+padding: 10px;
+margin: 5px;
+height: 400px;
+position: relative;
+/* top: 20px;
+left: 40px; */
+}
+
+.alerta{
+    background-color: chartreuse;
+    border: 4px solid red;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 20;
+
+}
+.chat{
+background-color: green;
+color: white;
+padding: 20px;
+
+/* TOMA EN CUENTA AL PROPIO NAVEGADOR PARA POSICIONARSE */
+position: fixed;
+bottom: 30px;
+right: 30px;
+
+}
+.solicitud{
+background-color: aqua;
+border: 4px solid orange;
+position: absolute;
+top: 120px;
+left: 90px;
+z-index: 30;
+
+}

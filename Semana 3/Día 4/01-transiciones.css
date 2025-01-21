@@ -1,0 +1,55 @@
+.caja1{
+width: 100px;
+height: 100px;
+background-color: aqua;
+/* que no dure mas de 500 ms el efecto */
+transition-duration: 500ms;
+/* efecto para que empiece desde la esquina */
+/* transition-property: width; */
+
+transition-property: all;
+/* transition-timing-function: ease; */
+
+transition-timing-function: cubic-bezier(.12,.96,.86,.13);
+/* transition-timing-function: steps(5); */
+
+}
+
+.caja1:hover{
+background-color: orange;
+width: 200px;
+height: 200px;
+
+
+
+}
+
+.caja2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* permite hacer modificaciones a un elemento distorcionando
+    moverlos agrandando */
+    /* translate pide una medida en el eje X e Y */
+    
+    transition-duration: 500ms;
+}
+.caja2:hover{
+    background-color: orangered;
+    transform: translate(100px, 0);
+
+}
+
+.texto{
+    width: 400px;
+    border: 2px solid red;
+    background-color: darkcyan;
+    color: white;
+    font-family: Arial, sans-serif;
+    /* scale en base a un valor numerico aumenta o disminuye */
+    /* permite rotar en base a grados */
+    /* tambien permite hacer transformaciones */
+    transform: translate(75px,75px) scale(2)rotate(90deg) skewX(45deg) skewY(20deg);
+
+
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* temporal */
+    /* border: 2px solid red; */
+}
+.container{
+    /* tamaño minimo hasta donde se puede reducir */
+    min-width: 800px;
+    /* tamaño maximo que puede alcanzar el ancho */
+    max-width: 1200px;
+    /*tamaño minimo hasta donde se puede reducir el alto  */
+    min-height: 1000px;
+    /* tamaño max hasta donde puede alcanza el alto */
+    max-height: 1200px;
+/* centrando */
+    margin: 0 auto;
+    padding: 40px;
+    /* grid */
+    display: grid;
+    grid-template-columns:repeat( 4,minmax(150px,1fr));
+    grid-template-rows: repeat(4,minmax(150px,1fr));
+    gap: 20px;
+}
+.card{
+    /* permite centrar a la izquierda */
+    position: relative;
+    filter: grayscale(100%);
+    /* le da efecto de movimiento */
+    transition-duration: 0.5s;
+
+    /* animaciones */
+
+    animation-name: entrada;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.card:hover{
+    filter: grayscale(0);
+    transform: translate(0,5px)scale(1.02)rotate(0.5deg);
+    /* le da el efecto para darle color al presionar clic a la imagen */
+    box-shadow: 0 0 10px black;
+}
+
+/* permite cuadrar a las imagenes por completo */
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.card span{
+    /* el top  coloca en el lado izquiedo superior a las imagenes */
+position: absolute;
+top: 5px;
+left: 5px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+/* este permite definir una sombra */
+text-shadow: 2px 2px 5px black;
+
+}
+.card1{
+grid-column: 1 / 3;
+grid-row: 1 / 3;
+animation-delay: 150ms;
+
+}
+.card2{
+    grid-row: 1/3;
+    animation-delay: 250ms;
+}
+
+.card3{
+    grid-row: 1/2;
+    animation-delay: 175ms
+
+}
+.card4{
+    /* grid-row: 2/3; */
+    grid-column: 2/4;
+    animation-delay: 75ms;
+}
+.card5{
+    grid-row: 2 / 3;
+    animation-delay: 130ms;
+}
+.card6{
+    grid-column: 4 / 5;
+    animation-delay: 300ms;
+}
+
+.card7{
+grid-column: 1 / 3;
+animation-delay: 140ms;
+
+}
+.card8{
+grid-column: 3/5;
+animation-delay: 200ms;
+
+}
+.card9{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    animation-delay: 90ms;
+}
+@keyframes entrada{
+    from{
+        /* si se pone 0 no aparece */
+transform: scale(0);
+
+    }
+    70%{
+        /* va aparecer pero un poquito mas grande */
+        transform: scale(1.05);
+    }
+
+    to{
+        /* aparece en su tamaño normal */
+        transform: scale(1);
+    }
+
+}

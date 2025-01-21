@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario Registro Fiesta 31</h1>
+    </header>
+    <main>
+        <p>Ingrese los campos solicitados</p>
+        <form>
+            <label for="Nombres">Nombres:</label>
+            <input id="Nombres"
+            type="text"
+            placeholder="Ej. Luis"
+            required
+            />
+            <br/>
+            <label for="apellidos">Apellidos:</label>
+            <input
+            id="apellidos"
+            type="text"
+            placeholder="Ej.Perez"
+            minlength="4"
+            maxlength="150"
+            pattern="[a-z]{1,5}"
+            />
+            <br/>
+            <label for="correo">E-mail</label>
+            <input
+            id="correo"
+            type="email"
+            placeholder="nombre@dominio.com"
+
+            />
+            <br/>
+        
+        
+            <label id="edad">Edad</label>
+            <input 
+            id="edad"
+            type="number"
+            placeholder="Ej. 20"
+            min="18"
+            max="70"
+            />
+            <br/>
+            <input id="masculino"
+             type="radio"
+             name="genero"
+             />
+             <label for="masculino">Masculino</label>
+             
+             <input id="femenino"
+             type="radio"
+             name="genero"
+             />
+             <label for="femenino">Femenino</label>
+
+             <input id="duda"
+             type="radio"
+             name="genero"
+             />
+             <label for="Duda">Duda</label>
+             <br/>
+             <span>¿Qué desea consumir?</span>
+             <br>
+             <input id="agua" type="checkbox"/>
+             <label for="agua">Agua</label>
+             <input id="Coctel" type="checkbox"/>
+             <label for="Coctel">Coctel</label>  
+             <input id="Disfraz" type="checkbox"/>
+             <label for="Coctel">Disfraz</label>  
+              <br>
+              <label for="">¿Dónde vives?</label> 
+              <select name="" id="">
+                <option selected disabled>-Elige Una-</option>
+                <option value="PL">Pueblo Libre</option>
+                <option value="CL">Cercado Lima</option>
+                <option value="SA">Santa Anita</option>
+                <option value="M">Miraflores</option>
+                <option value="L">Lince</option>
+                <option value="JM">Jesús María</option>
+                <option value="C">Comas</option>
+
+              </select>
+              <br>
+              <label for="nacimiento">Fecha de nacimiento</label>
+              <input id="nacimiento"type="date">
+              <label for="color"> De qué color es tu disfraz</label>
+              <input id="color"type="color">
+              <br>
+              <label for="disfraz">Indica tu disfraz</label>
+              <input id="disfraz" list="disfraces"/>
+              <datalist id="disfraces">
+                <option >Batman</option>
+                <option >Hombre Araña</option>
+                <option >Deep Pool</option>
+                <option >Logan</option>
+                <option >Momia</option>
+
+              </datalist>
+
+            <br/>
+            <input type="submit" value="Enviar">
+            <h2>Listas</h2>
+            <ul>
+                <li>Yape</li>
+                <li>Efectivo</li>
+                <li>Transferencias</li>
+
+            </ul>
+            <ol>
+                <li>Thriller</li>
+                <li>Las canciones de la cripta</li>
+
+            </ol>
+            
+
+        </form>
+    </main>
+</body>
+</html>

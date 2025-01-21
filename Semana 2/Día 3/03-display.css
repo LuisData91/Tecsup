@@ -1,0 +1,48 @@
+header{
+    width: 150px;
+    background-color: blueviolet;
+    display: none;
+}
+
+.comentarios{
+    background-color: aqua;
+    display: block;
+    width: 200px;
+}
+.parrafo1{
+    background-color: peru;
+}
+.parrafo2{
+    background-color: red;
+}
+.parrafo3{
+    background-color: blue;
+}
+
+span{
+background-color:  yellowgreen;
+width: 500px;
+display: inline;
+
+}
+
+.contenedor{
+    width: 1000px;
+    border: 2px solid salmon;
+
+}
+/* es como un salto, pero ocupa todo el espacio */
+label{
+    display: block;
+}
+/* NO USAR ESE COMANDO - TIENE FALLAS AL MOMENTO */
+main{
+    display: inline-block;
+    width: 500px;
+    border: 1px solid chocolate;
+}
+aside{
+    display: inline-block;
+    width: 500px;
+    border: 1px solid gray;
+}

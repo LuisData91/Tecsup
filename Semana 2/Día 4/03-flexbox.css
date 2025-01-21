@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* temporal */
+    border: 2px solid red;
+}
+.contenedor{
+    height: 800px;
+    background-color: aqua;
+    /* permite subir y alinear  FLEX BOX*/
+    display: flex;
+    /* gap: 20px; */
+    /* otro espaciado mas grande */
+/* justify-content: center; */
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    /* CENTRA LAS FORMAS EN EL MEDIO DE LA PAGINA */
+    align-items: center;
+    /* cambiar la orientacion de las formas */
+    /* flex-direction: column; */
+    flex-direction: row;
+    /* este comando baja a las formas */
+    /* flex-wrap: wrap; */
+
+}
+.caja{
+    background-color: yellow;
+    height: 120px;
+    width: 120px;
+}
+/* Estirar la caja  */
+.caja1{
+flex-grow: 1;
+
+}
+.caja2{
+flex-shrink: 2;
+
+}
+.caja4{
+flex-shrink: 4;
+
+}
+.caja5{
+    /* este elemento se va alinear de forma individual */
+    align-self: flex-end;
+
+}
+.caja6{
+    justify-self: center;
+}

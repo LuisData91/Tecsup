@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Montserrat-VariableFont_wght.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* temporal */
+    /* border: 2px solid red; */
+
+}
+/* el borde se llama padding  */
+header{
+    padding: 96px;
+    text-align: center;
+}
+small{
+    display: block;
+    font-family: 'Poppins',Arial;
+}
+h1,p,small{
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+h1{
+    width: 1024px;
+    margin: 0 auto;
+    /* dos fuentes para que tenga 2 opciones */
+    font-family: "Fraunces, serif";
+    font-weight: 300;
+    font-size: 72px;
+}
+
+
+
+/* si coloco 2 valores en margin aplica ese espacio para arriba y para abajo */
+.btn-header{
+    width: 240px;
+    margin: 60px auto 60px auto;
+}
+/* los margenes no se suman */
+
+img{
+    width: 1280px;
+    margin: 0 auto;
+    display: block;
+}
+
+p{
+    color: gray;
+    width: 720px;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Poppins',Arial;
+}
+button{
+    border-radius: 200px;
+    height: 60px;
+    padding: 16px 28px;
+    border: 1px solid black;
+}
+.btn-light{
+    background-color: white;
+ 
+}
+.btn-dark{
+    background-color: black;
+    color: white;
+}
+

@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.padre{
+border: 2px solid red;
+/* tamaño minimo sera 800 peero si el contenido excede ese tamaño crecera */
+min-height: 800px;
+/* separa el alto entre las filas  */
+display: grid;
+/* EL FR HACE QUE OCUPE TODO EL ESPACIO */
+/* grid-template-columns: 200px 200px 200px 200px 200px; */
+/* fr se distribuye segun los FR  que se coloca en columnas*/
+grid-template-columns: repeat(3, minmax(100px, 1fr));
+grid-template-rows: 200px 200px 200px ;
+gap: 50px;
+/* GRID IMPLICITO */
+grid-auto-columns: 400;
+grid-auto-rows: 400px;
+grid-auto-flow: column;
+
+}
+.hijo{
+    border: 2px solid blue;
+}
+.hijo1{
+background-color: cornflowerblue;
+grid-column: 1/3;
+grid-row: 1/3;
+
+}
+.hijo2{
+    background-color: firebrick;
+    grid-row: 1/3;
+}
+.hijo3{
+    background-color: darkturquoise;
+    grid-column: 1/4;
+}

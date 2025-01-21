@@ -1,0 +1,26 @@
+header{
+    width: 800px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+
+}
+/* medio dispositivo, puede variar pantalla */
+/* a las medidas utilizadas para crear los querys
+se les llama punto de quiebre
+*/
+@media screen and (width<=1024px){
+    header{
+        background-color: orange;
+        padding: 10px;
+    }
+}
+
+@media screen and (width<=480px){
+    h1{
+        color:red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 48px;
+    }
+}

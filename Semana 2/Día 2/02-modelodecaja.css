@@ -1,0 +1,39 @@
+/* es un selecto universal */
+/*  es un reset */
+*{
+    /* quitar el margen y padding a todo  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+header{
+    border: 5px solid blueviolet;
+    padding: 25px;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+}
+p{
+    /* espacio entre lineas */
+    line-height: 14px;
+}
+h2{
+    border: 2px solid salmon;
+    margin-bottom: 40px;
+/* botton abajo 
+top-arriba
+right derecha
+left izquierda
+*/
+padding-left: 20px;
+}
+p{
+    line-height: 20px;
+    border: 2px solid green;
+    padding: 40px 75px;
+    margin: 10px 20px 40px 80px;
+}
+
